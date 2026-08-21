@@ -589,6 +589,8 @@ main > section{ padding: 110px 0; position:relative; scroll-margin-top: 96px; }
 .site-footer .brand-name{ color: var(--bg); }
 .site-footer .brand-tagline{ color: var(--orange-light); }
 .footer-brand p{ margin-top:18px; font-size:.92rem; line-height:1.7; }
+.footer-contact{ display:flex; flex-direction:column; gap: 10px; font-size:.92rem; margin-top: 18px; }
+.footer-contact a:hover{ color: var(--orange-light); }
 .footer-col h4{
   color: var(--orange-light); font-family: var(--font-body); font-size:.82rem;
   letter-spacing:.14em; text-transform:uppercase; margin-bottom: 20px; font-weight:700;
