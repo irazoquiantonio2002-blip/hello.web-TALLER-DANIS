@@ -589,6 +589,16 @@ main > section{ padding: 110px 0; position:relative; scroll-margin-top: 96px; }
 .site-footer .brand-name{ color: var(--bg); }
 .site-footer .brand-tagline{ color: var(--orange-light); }
 .footer-brand p{ margin-top:18px; font-size:.92rem; line-height:1.7; }
+.footer-social{ display:flex; gap:12px; margin-top:22px; }
+.social-btn{
+  width:42px; height:42px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(241,240,236,.08); color: var(--bg);
+  border:1px solid rgba(241,240,236,.14);
+  transition: background .3s var(--ease), color .3s var(--ease), transform .3s var(--ease);
+}
+.social-btn svg{ width:19px; height:19px; }
+.social-btn:hover{ background: var(--orange); color: var(--black); transform: translateY(-3px); }
 .footer-col h4{
   color: var(--orange-light); font-family: var(--font-body); font-size:.82rem;
   letter-spacing:.14em; text-transform:uppercase; margin-bottom: 20px; font-weight:700;
