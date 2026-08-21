@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Danis | Hojalatería, pintura, pulido y encerado automotriz</title>
+  <meta name="description" content="Taller Danis ofrece hojalatería, pintura, pulido y encerado automotriz con atención directa de Daniel, acabados al detalle y pagos en efectivo o transferencia.">
+  <meta name="keywords" content="Taller Danis, hojalatería automotriz, pintura automotriz, pulido de autos, encerado de autos, restauración automotriz, taller de pintura">
+  <meta name="author" content="Taller Danis">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Taller Danis | Hojalatería, pintura y detailing">
+  <meta property="og:description" content="Recupera la presencia de tu auto con trabajo cuidadoso de hojalatería, pintura, pulido y encerado.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="assets/img/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <img src="assets/img/logo.png" alt="" class="loader-logo">
+    </div>
+  </div>
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Taller Danis — Inicio">
+        <img src="assets/img/logo.png" alt="Logo de Taller Danis" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">Danis</span>
+          <span class="brand-tagline">Hojalatería, pintura y detailing</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#contacto" class="nav-link">Cotización</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-primary btn-nav">Solicitar Cotización</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow reveal" data-reveal>Taller Danis — cuidado automotriz al detalle</p>
+
+        <h1 class="hero-title reveal" data-reveal>
+          <span class="gradient-text">De golpeado a impecable.</span><br>
+          <span class="gradient-text">Tu auto vuelve a lucir.</span>
+        </h1>
+
+        <p class="hero-typewriter reveal" data-reveal>
+          Especialistas en <span class="typewriter-word" id="typewriter"></span><span class="typewriter-cursor">|</span>
+        </p>
+
+        <p class="hero-desc reveal" data-reveal>
+          Hojalatería, pintura, pulido y encerado con enfoque en el acabado final. Daniel atiende cada vehículo con precisión, cuidado y una meta clara: que salgas confiado con el resultado.
+        </p>
+
+        <div class="hero-cta reveal" data-reveal>
+          <a href="#contacto" class="btn btn-primary btn-lg">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true"><path fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8.4l7.4 4.95a1 1 0 0 0 1.1 0L20 8.4V18ZM12 11.32 4.7 6.45A1 1 0 0 1 5 5h14a1 1 0 0 1 .3 1.45L12 11.32Z"/></svg>
+            Cotizar mi reparación
+          </a>
+          <a href="#servicios" class="btn btn-outline btn-lg">Ver servicios</a>
+        </div>
+
+        <div class="hero-proof reveal" data-reveal>
+          <span>Atención directa de Daniel</span>
+          <span>Pagos en efectivo o transferencia</span>
+          <span>Acabados con brillo y detalle</span>
+        </div>
+      </div>
+
+      <a href="#nosotros" class="scroll-indicator" aria-label="Desplázate hacia abajo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SOBRE NOSOTROS ============ -->
+    <section class="about" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-media reveal" data-reveal>
+          <div class="about-media-frame">
+            <img src="https://images.pexels.com/photos/20042056/pexels-photo-20042056/free-photo-of-man-cleaning-sports-car.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pulido profesional de un carro deportivo en taller automotriz" loading="lazy">
+          </div>
+          <div class="about-media-badge">
+            <span class="badge-number">4</span>
+            <span class="badge-label">Servicios<br>clave para tu auto</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow reveal" data-reveal>Sobre Taller Danis</p>
+          <h2 class="section-title reveal" data-reveal>Un taller enfocado en <span class="text-gold">detalle, acabado y confianza.</span></h2>
+          <p class="section-desc reveal" data-reveal>
+            Taller Danis es un negocio de hojalatería y pintura dirigido por Daniel. Aquí cada reparación se trabaja con atención al detalle: desde preparar la superficie hasta lograr un acabado limpio, brillante y listo para volver al camino.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 6.8 17.2 2 9.1 10.1 8 16l5.9-1.1L22 6.8ZM6.6 17.4l-1.1-1.1a4 4 0 1 0-1.4 1.4l1.1 1.1L2 22h5.1l1.3-1.3-1.8-3.3Z"/></svg>
+              </div>
+              <div>
+                <h3>Trabajo de hojalatería</h3>
+                <p>Reparación y preparación de piezas para recuperar forma, ajuste y presencia visual.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.4 7.3 16.7 4.6a2 2 0 0 0-2.8 0L3.6 14.9a2 2 0 0 0-.6 1.4V21h4.7a2 2 0 0 0 1.4-.6L19.4 10.1a2 2 0 0 0 0-2.8ZM7.7 19H5v-2.7l6.8-6.8 2.7 2.7L7.7 19Z"/></svg>
+              </div>
+              <div>
+                <h3>Pintura con acabado</h3>
+                <p>Procesos de preparación, aplicación y terminado para lograr un resultado uniforme y cuidado.</p>
+              </div>
+            </div>
+            <div class="pillar reveal" data-reveal>
+              <div class="pillar-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 14.2 8.3 21 10l-6.2 3.2L16 20l-4-4.9L8 20l1.2-6.8L3 10l6.8-1.7L12 2Z"/></svg>
+              </div>
+              <div>
+                <h3>Pulido y encerado</h3>
+                <p>Servicio ideal para renovar brillo, proteger la pintura y elevar la presentación del vehículo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Nuestros servicios</p>
+          <h2 class="section-title reveal" data-reveal>La reparación correcta para que tu auto <span class="text-gold">recupere presencia.</span></h2>
+          <p class="section-desc reveal" data-reveal>Servicios claros, ejecutados con cuidado y orientados a propietarios que valoran la apariencia y el mantenimiento de su vehículo.</p>
+        </div>
+
+        <div class="service-category reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="assets/img/servicio-hojalateria.jpg" alt="Proceso de hojalatería automotriz en Taller Danis" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>01 — Hojalatería</span>
+            <h3>Reparación y preparación de piezas</h3>
+            <p class="service-cat-desc">Trabajo cuidadoso para corregir daños visibles, preparar superficies y dejar la base lista para un acabado más limpio.</p>
+            <ul class="service-list">
+              <li>Revisión del daño y definición del proceso adecuado</li>
+              <li>Corrección de golpes y detalles visibles en carrocería</li>
+              <li>Ajuste y preparación de piezas antes de pintar</li>
+              <li>Lijado, resane y trabajo de superficie</li>
+              <li>Cuidado del vehículo durante cada etapa del proceso</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-category service-category--reverse reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="assets/img/servicio-pintura.jpg" alt="Aplicación de pintura roja en cofre de vehículo" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>02 — Pintura</span>
+            <h3>Pintura automotriz con acabado uniforme</h3>
+            <p class="service-cat-desc">Preparación y aplicación de pintura para devolverle al auto un aspecto renovado, parejo y bien presentado.</p>
+            <ul class="service-list">
+              <li>Preparación de superficie antes de aplicar color</li>
+              <li>Pintura de piezas y zonas trabajadas</li>
+              <li>Proceso orientado a un acabado limpio y uniforme</li>
+              <li>Revisión visual del terminado antes de entrega</li>
+              <li>Trabajo pensado para restauración y mantenimiento estético</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="service-category reveal" data-reveal>
+          <div class="service-cat-media">
+            <img src="assets/img/servicio-pulido.jpg" alt="Automóvil rojo con acabado brillante después de pulido y encerado" loading="lazy">
+          </div>
+          <div class="service-cat-content">
+            <span class="service-cat-tag reveal" data-reveal>03 — Pulido y encerado</span>
+            <h3>Brillo, protección y mejor presencia</h3>
+            <p class="service-cat-desc">Un servicio clave para quienes quieren que su auto se vea más limpio, cuidado y con mejor reflejo en la pintura.</p>
+            <ul class="service-list">
+              <li>Pulido para mejorar brillo y apariencia general</li>
+              <li>Encerado para proteger y realzar el terminado</li>
+              <li>Detallado visual en piezas trabajadas</li>
+              <li>Ideal después de pintura o como mantenimiento estético</li>
+              <li>Acabado final revisado con atención al detalle</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services-cta reveal" data-reveal>
+          <p>Para cotizar mejor, comparte el tipo de vehículo, fotos claras del daño y el servicio que necesitas.</p>
+          <a href="#contacto" class="btn btn-primary">Preparar cotización</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 1 ============ -->
+    <section class="parallax-banner">
+      <video class="parallax-video" autoplay muted loop playsinline poster="assets/img/galeria-04-preparacion.jpg">
+        <source src="assets/video/proceso.mp4" type="video/mp4">
+      </video>
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Proceso real</p>
+        <h2 class="reveal" data-reveal>Un buen acabado empieza desde la preparación.</h2>
+      </div>
+    </section>
+
+    <!-- ============ POR QUÉ ELEGIRNOS ============ -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>¿Por qué Taller Danis?</p>
+          <h2 class="section-title reveal" data-reveal>Servicio cercano, trabajo visible y <span class="text-gold">resultados cuidados.</span></h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 3 6v6c0 5.1 3.6 9.3 9 10 5.4-.7 9-4.9 9-10V6l-9-4Zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7Z"/></svg>
+            </div>
+            <h3>Atención directa</h3>
+            <p>Daniel conoce el trabajo y mantiene el enfoque en resolver lo que tu vehículo necesita.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 13h2v8H3v-8Zm4-4h2v12H7V9Zm4-6h2v18h-2V3Zm4 8h2v10h-2V11Zm4-5h2v15h-2V6Z"/></svg>
+            </div>
+            <h3>Proceso por etapas</h3>
+            <p>Preparación, pintura y terminado se trabajan con orden para proteger el acabado final.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 14.5 9.5 22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z"/></svg>
+            </div>
+            <h3>Detalle en el acabado</h3>
+            <p>El pulido, el encerado y la revisión visual hacen que la entrega se sienta completa.</p>
+          </div>
+          <div class="feature-card reveal" data-reveal>
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4 2v2h10V8H7Zm0 4v2h6v-2H7Zm0 4v2h10v-2H7Z"/></svg>
+            </div>
+            <h3>Pagos simples</h3>
+            <p>Por el momento el taller recibe pagos en efectivo o por transferencia.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANNER PARALLAX 2 ============ -->
+    <section class="parallax-banner" style="background-image:url('assets/img/banner-resultado.jpg');">
+      <div class="parallax-overlay"></div>
+      <div class="container parallax-content">
+        <p class="eyebrow reveal" data-reveal>Resultado final</p>
+        <h2 class="reveal" data-reveal>Cuando el brillo vuelve, el auto se siente distinto.</h2>
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal" data-reveal>Galería</p>
+          <h2 class="section-title reveal" data-reveal>Trabajo real de <span class="text-gold">Taller Danis</span></h2>
+          <p class="section-desc reveal" data-reveal>Una mirada al antes, la preparación y el acabado de vehículos trabajados en el taller.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/galeria-01-antes.jpg" alt="Auto rojo antes de trabajo de hojalatería y pintura" loading="lazy">
+            <span class="gallery-caption">Antes de iniciar</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/galeria-02-lijado.jpg" alt="Cofre lijado y preparado para pintura automotriz" loading="lazy">
+            <span class="gallery-caption">Preparación de superficie</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/galeria-03-primer.jpg" alt="Vehículo en primer antes de pintura final" loading="lazy">
+            <span class="gallery-caption">Base lista para pintar</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/galeria-04-preparacion.jpg" alt="Auto cubierto y protegido durante proceso de pintura" loading="lazy">
+            <span class="gallery-caption">Protección por zonas</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/galeria-05-acabado-rojo.jpg" alt="Auto rojo con acabado de pintura brillante" loading="lazy">
+            <span class="gallery-caption">Acabado rojo brillante</span>
+          </div>
+          <div class="gallery-item reveal" data-reveal>
+            <img src="assets/img/galeria-06-brillo.jpg" alt="Detalle de brillo después de pulido y encerado" loading="lazy">
+            <span class="gallery-caption">Brillo final</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal" data-reveal>Cotización</p>
+          <h2 class="section-title reveal" data-reveal>Cuéntale a Daniel qué necesita <span class="text-gold">tu vehículo.</span></h2>
+          <p class="section-desc reveal" data-reveal>Para una cotización más clara, prepara fotos del daño, modelo del vehículo y el servicio que buscas: hojalatería, pintura, pulido o encerado.</p>
+
+          <ul class="contact-list reveal" data-reveal>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19 3H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3Zm-1 6H6V7h12v2Zm0 4H6v-2h12v2Zm-5 4H6v-2h7v2Z"/></svg>
+              <span>Comparte fotos claras del daño, frente, laterales y acercamientos de la zona a reparar.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 11 3 6h3l2 5h8l2-5h3l-2 5 2 2v7h-2a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H3v-7l2-2Zm2.5 5A1.5 1.5 0 1 0 6 14.5 1.5 1.5 0 0 0 7.5 16Zm9 0A1.5 1.5 0 1 0 15 14.5a1.5 1.5 0 0 0 1.5 1.5Z"/></svg>
+              <span>Indica marca, modelo, color y si buscas reparación, pintura completa de pieza, pulido o encerado.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 4h16V7H4v2Zm0 4v4h16v-4H4Zm2 1h5v2H6v-2Z"/></svg>
+              <span>Pagos disponibles: efectivo y transferencia. Por el momento no hay terminal para tarjeta.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quote-card reveal" data-reveal>
+          <div class="quote-card-media">
+            <img src="assets/img/contacto.jpg" alt="Vehículo terminado en Taller Danis listo para entrega" loading="lazy">
+          </div>
+          <form class="quote-form" id="quote-form">
+            <label>
+              Nombre
+              <input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name">
+            </label>
+            <label>
+              Vehículo
+              <input type="text" name="vehiculo" placeholder="Marca, modelo y color">
+            </label>
+            <label>
+              Servicio
+              <select name="servicio">
+                <option>Hojalatería</option>
+                <option>Pintura</option>
+                <option>Pulido</option>
+                <option>Encerado</option>
+                <option>Varios servicios</option>
+              </select>
+            </label>
+            <label>
+              ¿Qué necesitas?
+              <textarea name="mensaje" rows="4" placeholder="Describe el daño o el acabado que buscas"></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Preparar solicitud</button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#inicio" class="brand">
+          <img src="assets/img/logo.png" alt="Logo de Taller Danis" class="brand-logo">
+          <span class="brand-text">
+            <span class="brand-name">Danis</span>
+            <span class="brand-tagline">Hojalatería, pintura y detailing</span>
+          </span>
+        </a>
+        <p>Hojalatería, pintura, pulido y encerado automotriz con atención al detalle y trato directo de Daniel.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Cotización</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li>Hojalatería</li>
+          <li>Pintura automotriz</li>
+          <li>Pulido</li>
+          <li>Encerado</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pagos</h4>
+        <ul class="footer-payments">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm0 4h16V7H4v2Zm0 4v4h16v-4H4Z"/></svg>
+            Efectivo
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3 2 8l10 5 10-5-10-5Zm0 7.8L6.5 8 12 5.2 17.5 8 12 10.8ZM4 11v6l8 4 8-4v-6l-8 4-8-4Z"/></svg>
+            Transferencia
+          </li>
+          <li>Sin terminal por el momento</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Taller Danis. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
