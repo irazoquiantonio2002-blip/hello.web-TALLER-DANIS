@@ -146,10 +146,27 @@ svg{ width:1em; height:1em; }
   display:flex; align-items:center; justify-content:space-between; gap: 24px;
 }
 .brand{ display:flex; align-items:center; gap:14px; min-width:0; }
+.brand-logo-wrap{
+  position:relative; display:inline-flex; align-items:center; justify-content:center;
+}
+.brand-logo-wrap::before{
+  content:''; position:absolute; inset:-14px; z-index:-1; border-radius:50%;
+  background: radial-gradient(circle, rgba(255,170,85,.5), rgba(255,122,26,.16) 55%, transparent 75%);
+  filter: blur(11px);
+  animation: logo-glow-pulse 3.6s ease-in-out infinite;
+}
+@keyframes logo-glow-pulse{
+  0%,100%{ opacity:.5; transform:scale(1); }
+  50%{ opacity:.9; transform:scale(1.08); }
+}
 .brand-logo{
   height: 82px; width:auto; object-fit:contain;
-  transition: height .4s var(--ease);
-  filter: drop-shadow(0 6px 14px rgba(0,0,0,.35));
+  transition: height .4s var(--ease), transform .5s var(--ease), filter .5s var(--ease);
+  filter: drop-shadow(0 8px 18px rgba(217,96,10,.45)) drop-shadow(0 2px 5px rgba(0,0,0,.35));
+}
+.brand-logo-wrap:hover .brand-logo{
+  transform: scale(1.06) rotate(-1deg);
+  filter: drop-shadow(0 10px 24px rgba(255,122,26,.65)) drop-shadow(0 2px 5px rgba(0,0,0,.4));
 }
 .is-scrolled .brand-logo{ height: 62px; }
 .brand-text{ display:flex; flex-direction:column; line-height:1.05; max-width: 260px; min-width:0; }
