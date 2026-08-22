@@ -158,6 +158,66 @@
     window.addEventListener('resize', resize);
   }
 
+  /* ============ WORKSHOP CAROUSEL ============ */
+  const carousel = document.getElementById('workshop-carousel');
+  const carouselTrack = document.getElementById('carousel-track');
+
+  if (carousel && carouselTrack) {
+    const slides = Array.from(carouselTrack.children);
+    const dots = Array.from(document.querySelectorAll('#carousel-dots .carousel-dot'));
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let current = 0;
+    let autoplayId = null;
+
+    const goTo = (index) => {
+      current = (index + slides.length) % slides.length;
+      carouselTrack.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('is-active', i === current));
+    };
+
+    const next = () => goTo(current + 1);
+    const prev = () => goTo(current - 1);
+
+    const startAutoplay = () => {
+      if (reduceMotion) return;
+      stopAutoplay();
+      autoplayId = setInterval(next, 5000);
+    };
+    const stopAutoplay = () => {
+      if (autoplayId) clearInterval(autoplayId);
+      autoplayId = null;
+    };
+
+    nextBtn.addEventListener('click', () => { next(); startAutoplay(); });
+    prevBtn.addEventListener('click', () => { prev(); startAutoplay(); });
+    dots.forEach((dot, i) => dot.addEventListener('click', () => { goTo(i); startAutoplay(); }));
+
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+
+    // Swipe táctil
+    let touchStartX = 0;
+    let touchDeltaX = 0;
+    carouselTrack.addEventListener('touchstart', (e) => {
+      touchStartX = e.touches[0].clientX;
+      stopAutoplay();
+    }, { passive: true });
+    carouselTrack.addEventListener('touchmove', (e) => {
+      touchDeltaX = e.touches[0].clientX - touchStartX;
+    }, { passive: true });
+    carouselTrack.addEventListener('touchend', () => {
+      if (touchDeltaX > 40) prev();
+      else if (touchDeltaX < -40) next();
+      touchDeltaX = 0;
+      startAutoplay();
+    });
+
+    goTo(0);
+    startAutoplay();
+  }
+
   /* ============ FOOTER YEAR ============ */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
